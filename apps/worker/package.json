@@ -1,0 +1,22 @@
+{
+  "name": "@drama/worker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.864.0",
+    "@drama/ai": "workspace:*",
+    "@drama/db": "workspace:*",
+    "@drama/domain": "workspace:*",
+    "@drama/media": "workspace:*",
+    "@drama/storage": "workspace:*",
+    "drizzle-orm": "^0.45.0",
+    "tsx": "^4.23.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14"
+  }
+}

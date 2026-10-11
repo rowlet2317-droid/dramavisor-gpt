@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS cue_response_evidence;
+ALTER TABLE rehearsal_events DROP CONSTRAINT IF EXISTS rehearsal_events_id_owner_session_unique;
+ALTER TABLE rehearsal_events DROP CONSTRAINT IF EXISTS rehearsal_events_selected_timing_check;
+ALTER TABLE rehearsal_events DROP CONSTRAINT IF EXISTS rehearsal_events_receipt_timing_check;
+ALTER TABLE rehearsal_events DROP COLUMN IF EXISTS timing_clock_id;
+ALTER TABLE rehearsal_events DROP COLUMN IF EXISTS timing_at_ms;
+ALTER TABLE rehearsal_events DROP COLUMN IF EXISTS timing_source;
+ALTER TABLE rehearsal_events DROP COLUMN IF EXISTS received_clock_id;
+ALTER TABLE rehearsal_events DROP COLUMN IF EXISTS received_at_ms;
+ALTER TABLE takes DROP CONSTRAINT IF EXISTS takes_id_owner_rehearsal_unique;
+ALTER TABLE takes DROP CONSTRAINT IF EXISTS takes_rehearsal_owner_fk;
+ALTER TABLE takes DROP COLUMN IF EXISTS rehearsal_session_id;

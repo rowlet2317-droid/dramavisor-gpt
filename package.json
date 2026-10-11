@@ -1,0 +1,40 @@
+{
+  "name": "drama-practice-app",
+  "private": true,
+  "packageManager": "pnpm@11.18.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit --project tsconfig.base.json",
+    "test": "vitest --run",
+    "test:e2e": "playwright test --config=playwright.config.ts --pass-with-no-tests",
+    "e2e:server": "node --import tsx scripts/e2e-server.ts",
+    "db:migrate:test": "vitest packages/db/src/migrations.integration.test.ts --run",
+    "db:migrate": "pnpm --filter @drama/db migrate",
+    "create-invite": "tsx scripts/create-invite.ts",
+    "smoke:provider": "node --import tsx scripts/provider-smoke.ts",
+    "smoke:realtime": "node --import tsx scripts/smoke-realtime.ts",
+    "acceptance:provider": "node --import tsx tests/performance/provider-acceptance.ts",
+    "lint": "eslint .",
+    "dev": "pnpm --filter @drama/web dev"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "@drama/ai": "workspace:*",
+    "@drama/db": "workspace:*",
+    "@drama/domain": "workspace:*",
+    "@drama/storage": "workspace:*",
+    "@eslint/js": "^9.0.0",
+    "@playwright/test": "^1.62.0",
+    "@sparticuz/chromium": "^149.0.0",
+    "@types/node": "^24.0.0",
+    "@types/react-test-renderer": "^19.1.0",
+    "@babel/eslint-parser": "^7.0.0",
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-syntax-typescript": "^7.0.0",
+    "eslint": "^9.0.0",
+    "react-test-renderer": "^19.2.0",
+    "drizzle-orm": "^0.45.0",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.0",
+    "vitest": "^4.1.0"
+  }
+}

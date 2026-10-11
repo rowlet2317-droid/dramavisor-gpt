@@ -1,0 +1,24 @@
+{
+  "name": "@drama/media",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./scripts/extract": "./src/scripts/extract.ts",
+    "./scripts/validate": "./src/scripts/validate.ts",
+    "./scripts/ocr": "./src/scripts/ocr.ts",
+    "./scripts/language": "./src/scripts/language.ts",
+    "./audio/normalize": "./src/audio/normalize.ts",
+    "./audio/align-script": "./src/audio/align-script.ts",
+    "./audio/decode-wav": "./src/audio/decode-wav.ts",
+    "./audio/vad": "./src/audio/vad.ts",
+    "./audio/pitch": "./src/audio/pitch.ts",
+    "./audio/metrics": "./src/audio/metrics.ts"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.80",
+    "mammoth": "^1.10.0",
+    "franc-min": "^6.2.0",
+    "pdfjs-dist": "^5.4.530"
+  }
+}

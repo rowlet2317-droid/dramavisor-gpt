@@ -1,0 +1,31 @@
+{
+  "name": "@drama/db",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "migrate": "node --import tsx ../../scripts/migrate.ts"
+  },
+  "exports": {
+    "./client": "./src/client.ts",
+    "./e2e-client": "./src/e2e-client.ts",
+    "./schema": "./src/schema.ts",
+    "./repositories/auth": "./src/repositories/auth.ts",
+    "./repositories/plays": "./src/repositories/plays.ts",
+    "./repositories/study": "./src/repositories/study.ts",
+    "./repositories/practice": "./src/repositories/practice.ts",
+    "./repositories/transcripts": "./src/repositories/transcripts.ts",
+    "./repositories/measurements": "./src/repositories/measurements.ts",
+    "./repositories/rehearsal": "./src/repositories/rehearsal.ts",
+    "./migrations": "./src/migrations.ts"
+  },
+  "dependencies": {
+    "@drama/domain": "workspace:*",
+    "drizzle-orm": "^0.45.0",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "drizzle-kit": "^0.31.8"
+  }
+}

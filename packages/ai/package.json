@@ -1,0 +1,40 @@
+{
+  "name": "@drama/ai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./config": "./src/config.ts",
+    "./play-parser/port": "./src/play-parser/port.ts",
+    "./play-parser/openai-parser": "./src/play-parser/openai-parser.ts",
+    "./play-parser/fake-parser": "./src/play-parser/fake-parser.ts",
+    "./study/port": "./src/study/port.ts",
+    "./study/openai-study": "./src/study/openai-study.ts",
+    "./study/fake-study": "./src/study/fake-study.ts",
+    "./study/fallback": "./src/study/fallback.ts",
+    "./tutor/port": "./src/tutor/port.ts",
+    "./tutor/openai-tutor": "./src/tutor/openai-tutor.ts",
+    "./transcription/port": "./src/transcription/port.ts",
+    "./transcription/openai-transcriber": "./src/transcription/openai-transcriber.ts",
+    "./transcription/fake-transcriber": "./src/transcription/fake-transcriber.ts",
+    "./audio-review/port": "./src/audio-review/port.ts",
+    "./audio-review/openai-audio-review": "./src/audio-review/openai-audio-review.ts",
+    "./audio-review/fake-audio-review": "./src/audio-review/fake-audio-review.ts",
+    "./coaching/port": "./src/coaching/port.ts",
+    "./coaching/openai-coach": "./src/coaching/openai-coach.ts",
+    "./coaching/fake-coach": "./src/coaching/fake-coach.ts",
+    "./realtime/port": "./src/realtime/port.ts",
+    "./realtime/openai-credentials": "./src/realtime/openai-credentials.ts",
+    "./realtime/fake-transport": "./src/realtime/fake-transport.ts",
+    "./character-voice/port": "./src/character-voice/port.ts",
+    "./character-voice/realtime-role": "./src/character-voice/realtime-role.ts",
+    "./character-voice/tts-fallback": "./src/character-voice/tts-fallback.ts",
+    "./character-voice/openai-tts": "./src/character-voice/openai-tts.ts",
+    "./character-voice/fake-voice": "./src/character-voice/fake-voice.ts"
+  },
+  "dependencies": {
+    "@drama/domain": "workspace:*",
+    "@drama/media": "workspace:*",
+    "zod": "^4.4.0"
+  }
+}

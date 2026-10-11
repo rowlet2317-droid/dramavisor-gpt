@@ -1,0 +1,25 @@
+{
+  "name": "@drama/web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "node scripts/clean-dev-cache.mjs && next dev --webpack"
+  },
+  "dependencies": {
+    "@drama/ai": "workspace:*",
+    "@drama/db": "workspace:*",
+    "@drama/domain": "workspace:*",
+    "@drama/media": "workspace:*",
+    "@drama/storage": "workspace:*",
+    "franc-min": "^6.2.0",
+    "next": "^16.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "drizzle-orm": "^0.45.0"
+  }
+}

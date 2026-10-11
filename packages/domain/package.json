@@ -1,0 +1,29 @@
+{
+  "name": "@drama/domain",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./play-model": "./src/play-model.ts",
+    "./jobs": "./src/jobs.ts",
+    "./parse-review": "./src/parse-review.ts",
+    "./study": "./src/study.ts",
+    "./practice": "./src/practice.ts",
+    "./transcript": "./src/transcript.ts",
+    "./audio-metrics": "./src/audio-metrics.ts",
+    "./coaching": "./src/coaching.ts",
+    "./take-comparison": "./src/take-comparison.ts",
+    "./exercises": "./src/exercises.ts",
+    "./rehearsal/types": "./src/rehearsal/types.ts",
+    "./rehearsal/controller": "./src/rehearsal/controller.ts",
+    "./rehearsal/recovery": "./src/rehearsal/recovery.ts",
+    "./rehearsal/reducer": "./src/rehearsal/reducer.ts",
+    "./rehearsal/transitions": "./src/rehearsal/transitions.ts",
+    "./rehearsal/cue-response": "./src/rehearsal/cue-response.ts",
+    "./rehearsal/voice-assignment": "./src/rehearsal/voice-assignment.ts",
+    "./operational-events": "./src/operational-events.ts"
+  },
+  "dependencies": {
+    "zod": "^4.4.0"
+  }
+}
